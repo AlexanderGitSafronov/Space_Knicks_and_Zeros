@@ -16,4 +16,8 @@
     top: 6px;
     right: 6px;
   }
+  .turn_to_walk_wins,
+  .turn_to_walk_no_wins {
+    margin: 177px 0px 20px;
+  }
 }
