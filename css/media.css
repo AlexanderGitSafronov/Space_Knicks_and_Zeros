@@ -1,23 +1,59 @@
-@media (max-width: 550px) {
+@media (max-width: 991px) {
+  .wrapper_counter {
+    left: 78%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper_counter {
+    left: 78%;
+  }
+}
+@media (max-width: 600px) {
+  .turn_to_walk {
+    margin: 145px 0px 20px;
+  }
+  .wrapper_counter {
+    top: 5px;
+    left: 5px;
+  }
+  .music_play {
+    top: 5px;
+    right: 5px;
+  }
+}
+@media (max-width: 533px) {
   .turn_to_walk_button button {
     margin: 177px 0px 20px;
   }
   .turn_to_walk {
     margin: 177px 0px 20px;
   }
-  .wrapper_counter {
-    top: 6px;
-    left: 6px;
-  }
   .game__block {
     top: 56%;
-  }
-  .music_play {
-    top: 6px;
-    right: 6px;
   }
   .turn_to_walk_wins,
   .turn_to_walk_no_wins {
     margin: 177px 0px 20px;
+  }
+  .x,
+  .y {
+    top: 2px;
+  }
+}
+@media (max-width: 360px) {
+  .game__block {
+    width: 360px;
+    height: 360px;
+  }
+  .music_play button {
+    padding: 6px 6px;
+  }
+  .x {
+    top: -5px;
+    left: 15px;
+  }
+  .y {
+    top: -6px;
+    left: 16px;
   }
 }

@@ -146,7 +146,6 @@
   will-change: transition;
   transition: 1.5s all;
 }
-
 .anim1 img {
   position: absolute;
   width: 30%;
@@ -168,7 +167,7 @@
 .anim3 img {
   position: absolute;
   width: 40%;
-  left: -450px;
+  left: -600px;
   top: 100px;
   transform: rotate(-15deg);
   z-index: 0;
