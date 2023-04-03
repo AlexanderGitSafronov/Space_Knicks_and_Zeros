@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body >  
+    <div class="wrapper">
+        <div class="anim1"><img src="./image/anim1.png" alt=""></div>
+        <div class="anim2"><img src="./image/anim2.png" alt=""></div>
+        <div class="anim3"><img src="./image/anim2.png" alt=""></div>
+        <div class="turn_to_walk_button"><button>Розпочати гру</button></div>
+        <div class="turn_to_walk">Черга ходити гравця : <span>X</span> </div>
+        <div class="turn_to_walk_wins">Виграв гравець : <span>X</span><button class="play__again">Грати знову</button></div>
+        <div class="turn_to_walk_no_wins"><span>Нічія!</span><button class="play__again">Грати знову</button></div>
+        <div class="game__block">
+            <div class="block block__1"></div>
+            <div class="block block__2"></div>
+            <div class="block block__3"></div>
+            <div class="block block__4"></div>
+            <div class="block block__5"></div>
+            <div class="block block__6"></div>
+            <div class="block block__7"></div>
+            <div class="block block__8"></div>
+            <div class="block block__9"></div>
+        </div>
+        <div class="wrapper_counter">
+            <div class="win__counter">
+                <div class="x_win">Гравець <span class="x_span">X</span> : <span class="count_x">0</span></div>
+                <div class="y_win">Гравець <span class="y_span">O</span> : <span class="count_y">0</span></div>
+                <div class="no_win">Нічія : <span class="count_no_win">0</span> </div>
+            </div>
+            <button class="counter__reset">Reset</button>
+        </div>
+       
+       <div class="music_play"><button class="music">Музика : on</button><button class="sounds">Виключити всі звуки</button></div>
+    </div>
+    
+  
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>

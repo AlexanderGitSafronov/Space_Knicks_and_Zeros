@@ -1,0 +1,19 @@
+@media (max-width: 390px) {
+  .turn_to_walk_button button {
+    margin: 197px 0px 20px;
+  }
+  .turn_to_walk {
+    margin: 197px 0px 20px;
+  }
+  .wrapper_counter {
+    top: 6px;
+    left: 6px;
+  }
+  .game__block {
+    top: 56%;
+  }
+  .music_play {
+    top: 6px;
+    right: 6px;
+  }
+}

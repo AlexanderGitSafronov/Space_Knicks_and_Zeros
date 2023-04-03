@@ -1,0 +1,261 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.wrapper {
+  overflow: hidden;
+  background-color: #000;
+  background: url("../image/bg.jpeg") center/cover no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+.music_play {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.music_play button {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  color: #b8e1ed;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.music_play button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+.play__again {
+  display: none;
+  margin-left: 20px;
+  background-color: #2375c0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.turn_to_walk {
+  margin: 100px 0px 20px;
+  font-size: 20px;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 4px;
+  color: #b8e1ed;
+  display: none;
+}
+
+.turn_to_walk_button button {
+  cursor: pointer;
+  margin: 100px 0px 20px;
+  font-size: 20px;
+  background-color: #2375c0;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  color: #000;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 10px #000;
+}
+.turn_to_walk_button button:hover {
+  background-color: #000;
+  color: #2375c0;
+  border: 2px solid #2375c0;
+}
+.turn_to_walk span,
+.turn_to_walk_wins span {
+  color: rgba(43, 134, 193, 255);
+  margin-left: 10px;
+}
+.turn_to_walk_wins,
+.turn_to_walk_no_wins {
+  display: flex;
+  align-items: center;
+  display: none;
+  margin: 100px 0px 20px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #b8e1ed;
+}
+
+.game__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+}
+.block {
+  margin: 6px;
+  background-color: antiquewhite;
+  width: 30%;
+  border: 2px solid antiquewhite;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  background-color: #0c0703;
+}
+.red {
+  width: 220%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 100px;
+  transition: 1.5s all;
+  will-change: transition;
+}
+.blue {
+  width: 220%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  top: -70px;
+  left: -200px;
+  transition: 1.5s all;
+  will-change: transition;
+}
+.move__starship1 {
+  opacity: 1;
+  left: -40px;
+  width: 160%;
+  will-change: transition;
+  transition: 1.5s all;
+}
+.move__starship2 {
+  opacity: 1;
+  left: -20px;
+  top: 0px;
+  width: 120%;
+  will-change: transition;
+  transition: 1.5s all;
+}
+
+.anim1 img {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  bottom: 200px;
+  transform: translate(100%, 100%);
+  z-index: 5;
+  will-change: transform;
+}
+.anim2 img {
+  position: absolute;
+  width: 0%;
+  left: 200px;
+  bottom: 60px;
+  transform: rotate(-80deg);
+  z-index: 0;
+  will-change: transform;
+}
+.anim3 img {
+  position: absolute;
+  width: 40%;
+  left: -450px;
+  top: 100px;
+  transform: rotate(-15deg);
+  z-index: 0;
+  will-change: transform;
+}
+.x {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 22px;
+  z-index: 3;
+  opacity: 0;
+}
+.x:before {
+  content: "✕";
+  font-size: 100px;
+  text-shadow: 0 0 10px rgba(43, 134, 193, 255);
+  color: rgba(43, 134, 193, 255);
+}
+.x__op {
+  opacity: 1;
+  transition: 1.5s all;
+}
+
+.y {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 22px;
+  z-index: 3;
+  opacity: 0;
+}
+.y:before {
+  content: "O";
+  font-size: 100px;
+  text-shadow: 0 0 10px red;
+  color: red;
+}
+.y__op {
+  opacity: 1;
+  transition: 1.5s all;
+}
+.wrapper_counter {
+  position: absolute;
+  top: 44%;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  align-items: center;
+}
+.win__counter {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+}
+.counter__reset {
+  width: 50%;
+  border-radius: 4px;
+  padding: 2px 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #2375c0;
+  border: 1px solid #2375c0;
+}
+.counter__reset:hover {
+  background-color: #2375c0;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.y_win {
+  margin: 20px 0px 20px;
+}
+.x_span {
+  margin-left: 5px;
+  color: #2375c0;
+}
+.y_span {
+  margin-left: 5px;
+  color: red;
+}
+.no_win {
+  display: flex;
+  justify-content: space-between;
+}
+.count_x,
+.count_y,
+.count_no_win {
+  margin-left: 10px;
+}
